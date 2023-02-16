@@ -37,6 +37,7 @@ dependencies {
     testImplementation("org.testcontainers:postgresql:1.17.6")
     testImplementation("org.testcontainers:mockserver:1.17.6")
     testImplementation("org.mock-server:mockserver-netty:5.15.0")
+    testImplementation("com.h2database:h2")
 }
 
 tasks.withType<KotlinCompile> {
@@ -132,4 +133,13 @@ tasks.jacocoTestCoverageVerification {
             }
         }
     }
+}
+
+tasks.jar {
+    enabled = false
+}
+
+tasks.register<JavaExec>("execute") {
+    mainClass.set("com.example.forexservice.RunAppKt")
+    classpath = sourceSets["unitTest"].runtimeClasspath
 }

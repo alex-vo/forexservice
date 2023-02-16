@@ -16,7 +16,7 @@
             <column name="to_currency" type="varchar(3)">
                 <constraints nullable="false"/>
             </column>
-            <column name="value" type="decimal">
+            <column name="fee_value" type="double">
                 <constraints nullable="false"/>
             </column>
             <column name="created_at" type="bigint">

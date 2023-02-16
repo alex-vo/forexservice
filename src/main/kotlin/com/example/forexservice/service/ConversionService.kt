@@ -30,7 +30,7 @@ class ConversionService(
 
     fun calculateTotalFee(fromCurrency: String, toCurrency: String, amount: BigDecimal): BigDecimal =
         feeRepository.findFeesByCurrencies(fromCurrency, toCurrency)
-            .map { it.value }
+            .map { it.feeValue }
             .ifEmpty { listOf(feeProperties.default) }
             .sumOf { amount * it }
 

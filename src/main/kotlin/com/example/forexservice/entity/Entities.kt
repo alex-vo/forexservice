@@ -11,7 +11,7 @@ import java.util.UUID
 class FeeEntity(
     val fromCurrency: String,
     val toCurrency: String,
-    var value: BigDecimal,
+    var feeValue: BigDecimal,
     val createdAt: Long,
     var modifiedAt: Long,
 ) {

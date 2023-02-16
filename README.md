@@ -1,3 +1,23 @@
+#Forex Service
+
+To run application locally inside a container execute:
+```
+docker compose up
+```
+To run application locally outside a container execute:
+```
+./gradlew execute
+```
+To build the application execute:
+```
+./gradlew build -x test
+```
+To run tests make sure Docker is installed then execute:
+```
+./gradlew test
+```
+For interaction with the service use a provided [Postman collectiom](forex.postman_collection.json)
+
 ![Build](https://github.com/alex-vo/forexservice/workflows/build/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6e9b5443f17b662b0253/maintainability)](https://codeclimate.com/github/alex-vo/forexservice/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6e9b5443f17b662b0253/test_coverage)](https://codeclimate.com/github/alex-vo/forexservice/test_coverage)

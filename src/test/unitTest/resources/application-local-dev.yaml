@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:forexdb
+  jpa:
+    properties:
+      jakarta:
+        persistence:
+          validation:
+            mode: none

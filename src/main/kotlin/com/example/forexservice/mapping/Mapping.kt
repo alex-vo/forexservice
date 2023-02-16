@@ -5,10 +5,10 @@ import com.example.forexservice.dto.internal.FeePatchDto
 import com.example.forexservice.entity.FeeEntity
 
 fun FeeEntity.toDto(): FeeDto =
-    FeeDto(id, fromCurrency, toCurrency, value, createdAt, modifiedAt)
+    FeeDto(id, fromCurrency, toCurrency, feeValue, createdAt, modifiedAt)
 
 fun FeeEntity.update(feePatchDto: FeePatchDto) = apply {
-    value = feePatchDto.value
+    feeValue = feePatchDto.value
     modifiedAt = System.currentTimeMillis()
 }
 

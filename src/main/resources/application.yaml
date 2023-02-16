@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/forexdb
+    username: postgres
+    password: example
+
+integration:
+  ecb:
+    base-uri: "https://www.ecb.europa.eu"
+
+fee:
+  default: 0.01
+
+currency:
+  main: EUR
+  rate-scale: 4

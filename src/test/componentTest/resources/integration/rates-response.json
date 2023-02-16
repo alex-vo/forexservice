@@ -1,0 +1,302 @@
+[
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "USD",
+    "rate": 1.0700
+  },
+  {
+    "fromCurrency": "USD",
+    "toCurrency": "EUR",
+    "rate": 0.9345
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "JPY",
+    "rate": 143.0500
+  },
+  {
+    "fromCurrency": "JPY",
+    "toCurrency": "EUR",
+    "rate": 0.0069
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "BGN",
+    "rate": 1.9558
+  },
+  {
+    "fromCurrency": "BGN",
+    "toCurrency": "EUR",
+    "rate": 0.5112
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "CZK",
+    "rate": 23.6660
+  },
+  {
+    "fromCurrency": "CZK",
+    "toCurrency": "EUR",
+    "rate": 0.0422
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "DKK",
+    "rate": 7.4515
+  },
+  {
+    "fromCurrency": "DKK",
+    "toCurrency": "EUR",
+    "rate": 0.1342
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "GBP",
+    "rate": 0.8882
+  },
+  {
+    "fromCurrency": "GBP",
+    "toCurrency": "EUR",
+    "rate": 1.1258
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "HUF",
+    "rate": 380.5800
+  },
+  {
+    "fromCurrency": "HUF",
+    "toCurrency": "EUR",
+    "rate": 0.0026
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "PLN",
+    "rate": 4.7600
+  },
+  {
+    "fromCurrency": "PLN",
+    "toCurrency": "EUR",
+    "rate": 0.2100
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "RON",
+    "rate": 4.9008
+  },
+  {
+    "fromCurrency": "RON",
+    "toCurrency": "EUR",
+    "rate": 0.2040
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "SEK",
+    "rate": 11.1400
+  },
+  {
+    "fromCurrency": "SEK",
+    "toCurrency": "EUR",
+    "rate": 0.0897
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "CHF",
+    "rate": 0.9885
+  },
+  {
+    "fromCurrency": "CHF",
+    "toCurrency": "EUR",
+    "rate": 1.0116
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "ISK",
+    "rate": 153.9000
+  },
+  {
+    "fromCurrency": "ISK",
+    "toCurrency": "EUR",
+    "rate": 0.0064
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "NOK",
+    "rate": 10.9193
+  },
+  {
+    "fromCurrency": "NOK",
+    "toCurrency": "EUR",
+    "rate": 0.0915
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "TRY",
+    "rate": 20.1677
+  },
+  {
+    "fromCurrency": "TRY",
+    "toCurrency": "EUR",
+    "rate": 0.0495
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "AUD",
+    "rate": 1.5529
+  },
+  {
+    "fromCurrency": "AUD",
+    "toCurrency": "EUR",
+    "rate": 0.6439
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "BRL",
+    "rate": 5.5860
+  },
+  {
+    "fromCurrency": "BRL",
+    "toCurrency": "EUR",
+    "rate": 0.1790
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "CAD",
+    "rate": 1.4356
+  },
+  {
+    "fromCurrency": "CAD",
+    "toCurrency": "EUR",
+    "rate": 0.6965
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "CNY",
+    "rate": 7.3229
+  },
+  {
+    "fromCurrency": "CNY",
+    "toCurrency": "EUR",
+    "rate": 0.1365
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "HKD",
+    "rate": 8.3983
+  },
+  {
+    "fromCurrency": "HKD",
+    "toCurrency": "EUR",
+    "rate": 0.1190
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "IDR",
+    "rate": 16320.5500
+  },
+  {
+    "fromCurrency": "IDR",
+    "toCurrency": "EUR",
+    "rate": 0.0000
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "ILS",
+    "rate": 3.7730
+  },
+  {
+    "fromCurrency": "ILS",
+    "toCurrency": "EUR",
+    "rate": 0.2650
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "INR",
+    "rate": 88.6415
+  },
+  {
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "rate": 0.0112
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "KRW",
+    "rate": 1374.3400
+  },
+  {
+    "fromCurrency": "KRW",
+    "toCurrency": "EUR",
+    "rate": 0.0007
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "MXN",
+    "rate": 19.9732
+  },
+  {
+    "fromCurrency": "MXN",
+    "toCurrency": "EUR",
+    "rate": 0.0500
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "MYR",
+    "rate": 4.7000
+  },
+  {
+    "fromCurrency": "MYR",
+    "toCurrency": "EUR",
+    "rate": 0.2127
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "NZD",
+    "rate": 1.7063
+  },
+  {
+    "fromCurrency": "NZD",
+    "toCurrency": "EUR",
+    "rate": 0.5860
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "PHP",
+    "rate": 59.0750
+  },
+  {
+    "fromCurrency": "PHP",
+    "toCurrency": "EUR",
+    "rate": 0.0169
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "SGD",
+    "rate": 1.4285
+  },
+  {
+    "fromCurrency": "SGD",
+    "toCurrency": "EUR",
+    "rate": 0.7000
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "THB",
+    "rate": 36.7710
+  },
+  {
+    "fromCurrency": "THB",
+    "toCurrency": "EUR",
+    "rate": 0.0271
+  },
+  {
+    "fromCurrency": "EUR",
+    "toCurrency": "ZAR",
+    "rate": 19.2891
+  },
+  {
+    "fromCurrency": "ZAR",
+    "toCurrency": "EUR",
+    "rate": 0.0518
+  }
+]

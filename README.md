@@ -1,4 +1,6 @@
 ![Build](https://github.com/alex-vo/forexservice/workflows/build/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6e9b5443f17b662b0253/maintainability)](https://codeclimate.com/github/alex-vo/forexservice/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6e9b5443f17b662b0253/test_coverage)](https://codeclimate.com/github/alex-vo/forexservice/test_coverage)
 ---
 # Homework: Backend
 You are developing an API for a [currency calculator](https://www.xe.com/currencyconverter/) with configurable conversion fees. There is an administrative API and a public API. The former allows an administrator to edit individual conversion fees for currency pairs. The latter is used to preview the conversions.

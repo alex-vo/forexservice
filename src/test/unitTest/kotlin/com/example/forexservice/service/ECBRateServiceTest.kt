@@ -9,11 +9,9 @@ import org.junit.jupiter.api.assertThrows
 import org.junit.jupiter.api.extension.ExtendWith
 import org.mockito.InjectMocks
 import org.mockito.Mock
-import org.mockito.Mockito.mock
 import org.mockito.Spy
 import org.mockito.junit.jupiter.MockitoExtension
 import org.mockito.kotlin.doReturn
-import org.mockito.kotlin.doThrow
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
 import org.springframework.cache.Cache
@@ -36,31 +34,12 @@ class ECBRateServiceTest {
     @Mock
     lateinit var currencyProperties: CurrencyProperties
 
+    @Mock
+    lateinit var cache: Cache
+
     @InjectMocks
     @Spy
     lateinit var ecbRateService: ECBRateService
-
-    @Test
-    fun `should get ECB rates`() {
-        val rateDto = RateDto("EUR", "USD", BigDecimal.valueOf(1.01))
-        val rates = listOf(rateDto)
-        doReturn(rates).whenever(ecbRateService).fetchRates()
-
-        val result = ecbRateService.getECBRates()
-
-        assertEquals(result, rates)
-    }
-
-    @Test
-    fun `should clear cache on ECB rate fetch failure and rethrow exception`() {
-        val e = RuntimeException()
-        doThrow(e).whenever(ecbRateService).fetchRates()
-
-        assertThrows<RuntimeException> { ecbRateService.getECBRates() }
-            .let { assertEquals(it, e) }
-
-        verify(ecbRateService).clearRatesCache()
-    }
 
     @Test
     fun `should throw EntityNotFoundException if no rate present`() {
@@ -84,20 +63,11 @@ class ECBRateServiceTest {
 
     @Test
     fun `should refresh currency rates`() {
+        whenever(cacheManager.getCache("rates")).thenReturn(cache)
         doReturn(ecbRateService).whenever(ecbRateService).self()
         doReturn(listOf<RateDto>()).whenever(ecbRateService).getECBRates()
 
         ecbRateService.refreshCurrencyRates()
-
-        verify(ecbRateService).clearRatesCache()
-    }
-
-    @Test
-    fun `should clear rates cache`() {
-        val cache = mock(Cache::class.java)
-        whenever(cacheManager.getCache("rates")).thenReturn(cache)
-
-        ecbRateService.clearRatesCache()
 
         verify(cache).clear()
     }

@@ -23,26 +23,6 @@ class ECBRateService(
 
     @Cacheable("rates")
     fun getECBRates(): List<RateDto> =
-        runCatching { fetchRates() }
-            .onFailure {
-                clearRatesCache()
-            }
-            .getOrThrow()
-
-    fun getECBRate(fromCurrency: String, toCurrency: String): BigDecimal =
-        self().getECBRates()
-            .find { it.fromCurrency == fromCurrency && it.toCurrency == toCurrency }
-            ?.rate
-            ?: throw EntityNotFoundException("No rate from $fromCurrency to $toCurrency found")
-
-    fun refreshCurrencyRates() {
-        clearRatesCache()
-        self().getECBRates()
-    }
-
-    fun self(): ECBRateService = applicationContext.getBean(ECBRateService::class.java)
-
-    fun fetchRates(): List<RateDto> =
         ecbClient.getForObject<Envelope>("/stats/eurofxref/eurofxref-daily.xml")
             .cube!!
             .innerCubes
@@ -61,9 +41,18 @@ class ECBRateService(
                 )
             }
 
-    fun clearRatesCache() {
+    fun getECBRate(fromCurrency: String, toCurrency: String): BigDecimal =
+        self().getECBRates()
+            .find { it.fromCurrency == fromCurrency && it.toCurrency == toCurrency }
+            ?.rate
+            ?: throw EntityNotFoundException("No rate from $fromCurrency to $toCurrency found")
+
+    fun refreshCurrencyRates() {
         cacheManager.getCache("rates")
             ?.clear()
+        self().getECBRates()
     }
+
+    fun self(): ECBRateService = applicationContext.getBean(ECBRateService::class.java)
 
 }

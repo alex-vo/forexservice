@@ -1,4 +1,4 @@
-#Forex Service
+# Forex Service
 
 To run application locally inside a container execute:
 ```
